@@ -1,0 +1,66 @@
+body {
+  background-color: rgb(24, 24, 24);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers horizontally */
+  justify-content: center; /* centers vertically */
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.emoji {
+  height: 50px;
+}
+
+.button {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center; /* centers the row horizontally */
+  gap: 10px; /* optional: adds space between buttons */
+}
+
+.button:hover {
+  background-color: rgb(74, 74, 74);
+}
+
+.result {
+  font-size: 20px;
+  margin-top: 20px;
+text-align: center;
+}
+
+.score {
+  font-size: 15px;
+  margin-top: 20px;
+    text-align: center;
+}
+
+.reset-score-button {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 5px;
+}

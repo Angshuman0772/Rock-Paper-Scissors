@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	
+	<title>Rock Paper Scissors</title>
+	<link rel="stylesheet" href="10-rock-paper-scissors.css">
+  </head>
+
+  <body>
+	<p class="title">Rock Paper Scissors</p>
+	
+	<div class="button-row">
+		<button class ='button' onclick="playGame('rock')">
+		<img src="emojis/rock-emoji.png" class = "emoji" alt="Rock">
+		</button>
+		
+		<button class ='button' onclick="playGame('paper')">
+		<img src="emojis/paper-emoji.png" class = "emoji" alt="Paper">	  
+		</button>
+
+		<button class ='button' onclick="playGame('scissors')">
+		<img src="emojis/scissors-emoji.png" class = "emoji" alt="Scissors">	  
+		</button>
+	</div>
+	
+
+	<div class="game-status">
+		<p class="js-result result"></p>
+		<p class="js-moves"></p>
+	</div>
+	<p class="js-score score"></p>
+
+	<button class ='reset-score-button' onclick="
+	  localStorage.removeItem('score'); // removes the score from local storage
+	  playGame('reset');
+	  updateScoreElement();
+	">Reset Score</button>
+
+	<script src="10-rock-paper-scissors.js"></script>
+  </body>
+</html>
