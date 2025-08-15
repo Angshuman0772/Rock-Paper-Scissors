@@ -26,14 +26,6 @@ A simple web-based Rock Paper Scissors game built with HTML, CSS, and JavaScript
     └── scissors-emoji.png
 ```
 
-## Screenshots
-
-Add screenshots of the game UI here (optional).
-
-## Credits
-
-- Emoji images from [emojis/](emojis/)
-
 ## License
 
 This project is licensed under the MIT License.
